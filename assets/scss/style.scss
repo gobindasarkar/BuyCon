@@ -1,0 +1,38 @@
+/*
+------------- Table of content ----------------
+
+Template Name: Wheely Soft  Responsive  HTML5 Template
+Template URI: https://Wheely-Soft.com/
+Description: Wheely Soft  Responsive  HTML5 Template
+Author: Gobinda Sarkar
+Author URI: https://Wheely-Soft.com/
+Version: 1.0
+
+---------------------- common content ----------
+1.body reset content
+#.header-area
+#.top-section
+#.primary-table-area
+
+
+
+
+*/
+
+/*===============================
+#.primary-table-area
+=================================*/
+
+// variable
+@import "variable/_variable.scss";
+
+// mixin
+@import "mixin/_mixin.scss";
+
+// body reset content
+@import "reset/_predefine.scss";
+
+// component content
+@import "component/header.scss";
+@import "component/top-section";
+@import "component/primary-table-area";
