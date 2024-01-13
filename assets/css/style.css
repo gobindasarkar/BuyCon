@@ -829,8 +829,15 @@ scrollUp
   width: 4.8rem;
   height: 4.8rem;
   background-color: var(--white);
+  color: var(--black);
   border-radius: 50%;
   filter: drop-shadow(4px 2px 4px rgba(43, 202, 139, 0.25));
+  font-size: 2rem;
+  transition: all 0.5s linear;
+}
+.table-wrap .search-btn:hover {
+  background-color: var(--primary-color);
+  color: var(--white);
 }
 .table-wrap::before {
   position: absolute;
