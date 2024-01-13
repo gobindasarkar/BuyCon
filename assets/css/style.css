@@ -725,6 +725,11 @@ scrollUp
   white-space: nowrap;
   background-color: transparent;
 }
+.primary-table-area .table thead tr th .text-mute {
+  font-weight: 300;
+  color: #9A9A9A;
+  border-bottom: 1px solid #9A9A9A;
+}
 .primary-table-area .table thead tr th span {
   display: inline-flex;
   align-items: center;
@@ -747,9 +752,6 @@ scrollUp
 .primary-table-area .table tbody tr td .form-check-input:checked {
   background-color: var(--primary-color);
   border-color: var(--primary-color);
-}
-.primary-table-area .table tbody tr:nth-child(odd) td {
-  border-bottom: none;
 }
 
 .table-filter-btn {
