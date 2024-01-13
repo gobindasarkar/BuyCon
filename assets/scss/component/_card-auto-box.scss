@@ -1,0 +1,156 @@
+/*===============================
+#.card-auto-box
+=================================*/
+.card-auto-box {
+    background-color: var(--white);
+    border-radius: 1rem;
+    overflow: hidden;
+    .auto-box-head {
+        .auto-box-title {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            height: 3.8rem;
+            text-align: center;
+            background-color: #151FDD;
+            padding: 0 1rem;
+            font-size: 2rem;
+            font-weight: 500;
+            line-height: 1;
+            color: var(--white);
+            border-radius: 0 0 .8rem 0;
+        }
+        .auto-box-btn {
+            border: none;
+            background-color: transparent;
+            padding: 0;
+        }
+    }
+    .auto-box-body {
+        padding: 2rem 2.5rem;
+        .auto-box-info {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            li {
+                margin-bottom: 1rem;
+                display: flex;
+                .auto-box-name {
+                    min-width: 12rem;
+                    font-size: 1.8rem;
+                    font-weight: 500;
+                    color: var(--black);
+                    margin-right: .5rem;
+                }
+                .auto-box-value {
+                    flex: 1;
+                    font-size: 2rem;
+                    font-weight: 600;
+                    color: var(--black);
+                    &:empty {
+                        border-bottom: 1px solid #9F9F9F;
+                    }
+                    p {
+                        font-weight: 400;
+                        margin-bottom: 0;
+                    }
+                }
+                .mark-samble {
+                    display: inline-block;
+                    align-items: center;
+                    justify-content: center;
+                    text-align: center;
+                    color: var(--white);
+                    width: 3rem;
+                    height: 3rem;
+                    background-color: var(--primary-color);
+                    margin: 0 1rem;
+                    font-size: 2rem;
+                    &.check {
+                        background-color: #151FDD;
+                    }
+                }
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+    .auto-box-footer {
+        font-size: 1.6rem;
+        color: var(--black);
+        background-color: #F0F1F3;
+        padding: 2.5rem 1rem 1.5rem 1rem;
+        margin-top: 1.5rem;
+        .notes {
+            display: flex;
+            align-items: center;
+            grid-column-gap: 1rem;
+            font-size: 2rem;
+            font-weight: 500;
+            color: var(--black);
+            margin-top: -4.2rem;
+            margin-bottom: 1rem;
+        }
+        p {
+            margin-bottom: 0;
+        }
+    }
+    &.large-box {
+        .auto-box-body {
+            .auto-box-info {
+                li {
+                    margin-bottom: 3rem;
+                    .auto-box-name {
+                        position: relative;
+                        z-index: 1;
+                        height: 2rem;
+                        &::first-letter {
+                            color: var(--white);
+                        }
+                        .shape {
+                            position: absolute;
+                            left: -1.5rem;
+                            top: 50%;
+                            transform: translateY(-50%);
+                            z-index: -1;
+                        }
+                    }
+                    &:last-child {
+                        margin-bottom: 0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media  (max-width: 1199px) {
+    .card-auto-box .auto-box-body .auto-box-info li .auto-box-name {
+        min-width: 10rem;
+        font-size: 1.4rem;
+    }
+    .card-auto-box .auto-box-body .auto-box-info li .auto-box-value {
+        font-size: 1.4rem;
+    }
+    .card-auto-box .auto-box-footer .notes {
+        font-size: 1.6rem;
+    }
+    .card-auto-box .auto-box-footer {
+        font-size: 1.4rem;
+    }
+}
+@media  (max-width: 767px) {
+    .card-auto-box.large-box .auto-box-body .auto-box-info li {
+        margin-bottom: 2rem;
+    }
+}
+@media  (max-width: 374px) {
+    .card-auto-box.large-box .auto-box-body .auto-box-info li {
+        flex-flow: row wrap;
+    }
+    .card-auto-box.large-box .auto-box-body .auto-box-info li .auto-box-name {
+        width: 100%;
+        margin-bottom: 1.5rem;
+    }
+}

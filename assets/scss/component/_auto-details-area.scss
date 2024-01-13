@@ -1,0 +1,144 @@
+/*===============================
+#.auto-details-area
+=================================*/
+.image-carosel {
+    padding: 1.5rem;
+    background: var(--white);
+    border-radius: 3rem;
+    box-shadow: 3px 6px 4px 0px rgba(192, 192, 192, 0.25);
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 3rem;
+    }
+    .control-arrow {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 3.5rem;
+        height: 2.8rem;
+        background: var(--primary-color);
+        border: none;
+        color: var(--white);
+        z-index: 1;
+        transition: $transition;
+        &:hover {
+            background: var(--hover-color);
+        }
+        &.carousel-control-prev {
+            left: 1.5rem;
+            border-radius: 0 1rem 1rem 0;
+        }
+        &.carousel-control-next {
+            right: 1.5rem;
+            border-radius: 1rem 0 0 1rem;
+        }
+    }
+}
+.auto-details-top {
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #BDC3C7;
+    .auto-details-top-left {
+        h3 {
+            font-size: 3rem;
+            font-weight: 600;
+            color: #6E6E6E;
+        }
+        h2 {
+            font-size: 3.5rem;
+            font-weight: 600;
+            color: var(--black);
+        }
+    }
+}
+.auto-details-bottom {
+    padding-top: 1rem;
+    .auto-vin {
+        font-size: 2.2rem;
+        font-weight: 500;
+        color: #6E6E6E;
+    }
+}
+.auto-details-btn-group {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    grid-gap: 2rem;
+    button {
+        padding: 0;
+        border: none;
+        background-color: transparent;
+    }
+}
+.auto-vin-status {
+    background: var(--white);
+    padding-left: 2rem;
+    border-radius: 1.2rem 0 0 1.2rem;
+    .action-title {
+        font-size: 1.8rem;
+        font-weight: 500;
+    }
+    .auto-vin-status-list{
+        display: flex;
+        align-items: center;
+        font-size: 1.8rem;
+        font-weight: 400;
+        li {
+            border-right: 1px solid var(--black);
+            border-bottom: none;
+            &:last-child {
+               border-right: none;
+            }
+        }
+        button {
+            border: none;
+            padding: 1rem 1rem;
+            background: transparent;
+            white-space: nowrap;
+            &.fail {
+                background-color: #E74C3C;
+            }
+            &.success {
+                background-color: #1ABC9C;
+            }
+        }
+    }
+}
+
+@media (max-width: 991px) {
+    .auto-details-top .auto-details-top-left h3 {
+        font-size: 2rem;
+    }
+    .auto-details-top .auto-details-top-left h2 {
+        font-size: 2.4rem;
+    }
+    .auto-details-bottom .auto-vin {
+        font-size: 1.8rem;
+    }
+    .auto-vin-status .auto-vin-status-list {
+        font-size: 1.4rem;
+    }
+    .auto-vin-status .action-title {
+        font-size: 1.4rem;
+    }
+    .auto-vin-status .auto-vin-status-list button {
+        padding: .8rem .5rem;
+    }
+}
+@media (max-width: 480px) {
+    .auto-vin-status .action-title {
+        font-size: 1.2rem;
+        margin-right: 0;
+    }
+    .auto-vin-status .auto-vin-status-list {
+        font-size: 1.2rem;
+    }
+    .auto-vin-status {
+        padding-left: .5rem;
+    }
+    .auto-vin-status .auto-vin-status-list button {
+        padding: .5rem .4rem;
+    }
+    
+}

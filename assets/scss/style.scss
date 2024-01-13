@@ -1,11 +1,11 @@
 /*
 ------------- Table of content ----------------
 
-Template Name: Wheely Soft  Responsive  HTML5 Template
-Template URI: https://Wheely-Soft.com/
-Description: Wheely Soft  Responsive  HTML5 Template
+Template Name: BuyCon  Responsive  HTML5 Template
+Template URI: https://BuyCon.com/
+Description: BuyCon  Responsive  HTML5 Template
 Author: Gobinda Sarkar
-Author URI: https://Wheely-Soft.com/
+Author URI: https://BuyCon.com/
 Version: 1.0
 
 ---------------------- common content ----------
@@ -13,15 +13,17 @@ Version: 1.0
 #.header-area
 #.top-section
 #.primary-table-area
+#.auto-details-area
+#.card-auto-box
+#.attention-area
+#.secondary-table-area
 
 
 
 
 */
 
-/*===============================
-#.primary-table-area
-=================================*/
+
 
 // variable
 @import "variable/_variable.scss";
@@ -36,3 +38,7 @@ Version: 1.0
 @import "component/header.scss";
 @import "component/top-section";
 @import "component/primary-table-area";
+@import "component/auto-details-area";
+@import "component/card-auto-box";
+@import "component/attention-area";
+@import "component/secondary-table-area";

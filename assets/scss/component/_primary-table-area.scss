@@ -58,49 +58,50 @@
         background-color: var(--primary-color);
     }
 }
-
-.table {
-    width: 100%;
-    thead {
-        tr {
-            th {
-                padding:2rem  1.5rem;
-                font-size: 1.5rem;
-                font-weight: 500;
-                color: var(--black);
-                white-space: nowrap;
-                background-color: transparent;
-                span {
-                    display: inline-flex;
-                    align-items: center;
-                }
-                i {
-                    margin-left: .2rem;
-                }
-            }
-        }
-    }
-    tbody {
-        tr {
-            td {
-                padding: 1.5rem;
-                font-size: 1.4rem;
-                font-weight: 400;
-                color: var(--black);
-                vertical-align: middle;
-                background-color: transparent;
-                .form-check-input {
-                    border: 2px solid var(--black);
-                    box-shadow: none;
-                    &:checked {
-                        background-color: var(--primary-color);
-                        border-color: var(--primary-color);
+.primary-table-area {
+    .table {
+        width: 100%;
+        thead {
+            tr {
+                th {
+                    padding:2rem  1.5rem;
+                    font-size: 1.5rem;
+                    font-weight: 500;
+                    color: var(--black);
+                    white-space: nowrap;
+                    background-color: transparent;
+                    span {
+                        display: inline-flex;
+                        align-items: center;
+                    }
+                    i {
+                        margin-left: .2rem;
                     }
                 }
             }
-            &:nth-child(odd) {
+        }
+        tbody {
+            tr {
                 td {
-                    border-bottom: none;
+                    padding: 1.5rem;
+                    font-size: 1.4rem;
+                    font-weight: 400;
+                    color: var(--black);
+                    vertical-align: middle;
+                    background-color: transparent;
+                    .form-check-input {
+                        border: 2px solid var(--black);
+                        box-shadow: none;
+                        &:checked {
+                            background-color: var(--primary-color);
+                            border-color: var(--primary-color);
+                        }
+                    }
+                }
+                &:nth-child(odd) {
+                    td {
+                        border-bottom: none;
+                    }
                 }
             }
         }
